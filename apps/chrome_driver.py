@@ -11,10 +11,10 @@ class ChromeDriver:
     def __init__(self, *args, **kwargs):
         # options = Options()
         options = webdriver.ChromeOptions()
-        # options.add_argument('--headless')
+        options.add_argument('--headless')
         options.add_argument('--no-sandbox')
         # options.add_argument('--disable-dev-shm-usage')
-        # options.add_argument('--disable-gpu')
+        options.add_argument('--disable-gpu')
         options.binary_location = CHROME_BINARY_PATH
 
         self.driver = webdriver.Chrome(executable_path = CHROME_DRIVER_PATH, options = options)
