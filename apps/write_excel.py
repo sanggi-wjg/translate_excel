@@ -1,5 +1,3 @@
-import os
-
 import xlsxwriter
 
 from apps.utils import ExcelWriteError
